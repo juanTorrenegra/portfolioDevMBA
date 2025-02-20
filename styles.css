@@ -1,0 +1,41 @@
+body {    
+    background: linear-gradient(90deg,  rgb(2, 3, 30),rgb(47, 0, 140));
+    color:linen;
+}
+#ilustracion{
+    position:absolute;
+    top:-200px;
+    z-index:-1;
+    animation:ilustracion 100s infinite linear;
+}
+
+#imsoftware {
+    font-size: 54px;
+}
+.hero {
+    font-family:"Inter",serif;
+    font-weight:700px;
+    font-size:34px;   
+}
+h4 {
+    font-family:"Inter" ,serif;
+    text-align: left;
+    max-width:550px;
+    padding-left:15px; 
+}
+.social-icons {
+    display:flex;
+    font-size:2rem;
+    justify-content:space-evenly;
+    margin-top:150px;
+    max-width:600px;
+}
+@keyframes ilustracion {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+@media only screen and (max-width: 550px) {
+    #ilustracion {
+        left:-200px;}
+}
