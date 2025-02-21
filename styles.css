@@ -1,12 +1,17 @@
 body {    
     background: linear-gradient(90deg,  rgb(2, 3, 30),rgb(47, 0, 140));
     color:linen;
+    display:flex;
 }
 #ilustracion{
-    position:absolute;
-    top:-200px;
+    display:flex;
+    position:fixed;
+    top:-10%;
+    left:-10%;
+    transform: translate(-50%, -50%); 
     z-index:-1;
     animation:ilustracion 100s infinite linear;
+    transform-origin: center;
 }
 
 #imsoftware {
