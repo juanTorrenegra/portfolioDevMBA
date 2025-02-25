@@ -14,11 +14,22 @@
 </head>
 <body>
     <img id="ilustracion" src="images/ilustracion.png">
-    <section class="web">
+    <section class="web1">
+ 
 
         <header>
             <div></div>
-            <div class="bars"><i class="fa-solid fa-bars"></i></div>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="https://github.com/juanTorrenegra" target="_blank" rel="noopener">Portfolio</a></li>
+                        <li><a href="https://assange-tribute.netlify.app/" target="_blank" rel="noopener">About Us</a></li>
+                        <li><a href="https://formulariotorrenegra.netlify.app/" target="_blank" rel="noopener">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
             <nav>
                 <ul><li>
                         <a href="https://github.com/juanTorrenegra" target="_blank" rel="noopener"><span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span></a>
@@ -34,22 +45,6 @@
         </header>
 
 
-
-        <main>
-            
-            <div id="hero">
-                <h2 id="hithere" >Hi There,<br> I’m Juan Torrenegra. </h2>
-                <h1 id="imsoftware">I’m a Full Stack Developer</h1>
-                <h4>I can help you build a product , feature or website. Look through some of my work and 
-                    experience! If you like what you see and have a project you need coded, 
-                    don’t hesitate to contact me.</h4>
-            </div>
-            <div id=""
-        </main>
-
-
-
-
         <aside class="social-icons">
             <a href="https://www.facebook.com/juan.torrenegra/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/juantorrenegramodel/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
@@ -60,10 +55,74 @@
             
         </aside>
 
+        <main> 
+
+            <div class="content">
+
+
+                <div id="hero">
+                    <h2 id="hithere" >Hi There,<br> I’m Juan Torrenegra. </h2>
+                    <h1 id="imsoftware">I’m a Full Stack Developer</h1>
+                    <h4>I can help you build a product , feature or website. Look through some of my work and 
+                        experience! If you like what you see and have a project you need coded, 
+                        don’t hesitate to contact me.</h4>
+                </div>
+
+
+
+                <div class="works">
+                    <h2 class="titulo">My Recent Works</h2>
+                
+                    <div class="workscontainer">
+                        <img src="images/works1.png" class="workbox">
+                        <img src="images/works2.png" class="workbox">
+                        <img src="images/works3.png" class="workbox">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer class="footer">
+                <address>
+                    <a href="https://github.com/juanTorrenegra">juanTorrenegra</a><br />
+                    +57-310-5704379<br />
+                    Bogota<br />
+                    Colombia
+                  </address>
+            </footer>
+            
+        </main>
+
 
     </section>
-    
 
+    <script>
+        // Select elements
+        const barsContainer = document.querySelector(".bars");
+        const dropdown = document.querySelector(".dropdown");
     
+        // Toggle dropdown on click
+        barsContainer.addEventListener("click", (event) => {
+            dropdown.classList.toggle("active");
+            barsContainer.classList.toggle("active");
+            event.stopPropagation(); // Prevents click from bubbling up
+        });
+    
+        // Close dropdown when clicking outside, but allow clicking links
+        document.addEventListener("click", (event) => {
+            if (!barsContainer.contains(event.target)) {
+                dropdown.classList.remove("active");
+                barsContainer.classList.remove("active");
+            }
+        });
+    
+        // Ensure clicking links inside the dropdown does not close the menu before navigation
+        document.querySelectorAll(".dropdown a").forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.stopPropagation(); // Prevents dropdown from closing before navigation
+            });
+        });
+    </script>
 </body>
 </html>
