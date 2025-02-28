@@ -361,6 +361,12 @@ textarea {
     font-family:"Poppins","Inter";
     font-size:18px;
 }
+#submit:hover{
+    background-color: #36b37f;
+    color:white;
+    border:2px solid purple;
+    cursor:pointer;
+}
 /* Mobile Layout */
 @media only screen and (max-width: 600px) {  
 
