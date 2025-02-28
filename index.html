@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..
 900;1,14..32,100..900&family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&family=Poppins:wght@200;300;400;500;600;700;800&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">   
 
 </head>
 <body>
@@ -24,7 +25,7 @@
                 <div class="dropdown">
                     <ul>
                         <li><a href="https://github.com/juanTorrenegra" target="_blank" rel="noopener">Portfolio</a></li>
-                        <li><a href="https://assange-tribute.netlify.app/" target="_blank" rel="noopener">About Us</a></li>
+                        <li><a href="#about" target="_blank" rel="noopener">About Us</a></li>
                         <li><a href="https://formulariotorrenegra.netlify.app/" target="_blank" rel="noopener">Contact</a></li>
                     </ul>
                 </div>
@@ -35,7 +36,7 @@
                         <a href="https://github.com/juanTorrenegra" target="_blank" rel="noopener"><span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span></a>
                     </li>
                     <li>
-                        <a href="https://assange-tribute.netlify.app/" target="_blank" rel="noopener"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></a>
+                        <a href="#about" target="_blank" rel="noopener"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></a>
                     </li>
                     <li>
                         <a href="https://formulariotorrenegra.netlify.app/" target="_blank" rel="noopener"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></a>
@@ -80,6 +81,52 @@
                     </div>
                 </div>
 
+
+            </div>
+
+            <div id="about" class="about">
+                <h2 class="whitetitle">About me</h2>
+                <p class="whitetext">I can help you build a product, feture or website Look through some of my work and experience! If you like what you see and have a project you need coded, don´t hesitate to contact me.</p>
+                <a href="https://guerrerovikingo.netlify.app/"target="_blank" rel="noopener">
+                    <button class="whitebutton">Get my resume</button>
+                </a>
+            </div>
+            <div id="skills">
+                <div id="languages" class="cards">
+                    <img class="icon" src="images/lang.png">
+                    <h2 class="whitetitle">Languages</h2>
+                    <div class="buttons">
+                        <img src="images/langbuttons.png">
+                        
+                    </div>
+                </div>
+                <div id="frameworks" class="cards">
+                    <img class="icon" src="images/frameworks.png">
+                    <h2 class="whitetitle">Frameworks</h2>
+                    <div class="buttons">
+                        <img src="images/fbuttons.png">
+
+                    </div>
+                </div>
+                <div id="habilidades" class="cards">
+                    <img class="icon" src="images/skills.png">
+                    <h2 class="whitetitle">Skills</h2>
+                    <div class="buttons">
+                        <img src="images/sbuttons.png">
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="contact">
+                <form method="POST" action="https://formspree.io/f/mzzdnerz">
+                    <h2 class="contacttitle">Contact me</h2>
+                    <p class="contacttext">If you have an application you are interested in developing, a feature that you need  built or a project that needs coding. I´d love to help with it!</p>
+                    <input type="text" placeholder="your name" id="nombre" name="name" required>
+                    <input type="email" placeholder="your@email.com" required name="email" id="email">
+                    <textarea id="textareaid" name="mensaje" placeholder="write your message here"></textarea>
+                    <button id="submit" type="submit">Get in touch</button>
+                </form>
 
             </div>
 
